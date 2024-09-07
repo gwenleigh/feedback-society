@@ -1,12 +1,12 @@
 const forumData = [
     {
       id: 1,
-      name: "Safety in public transportation",
+      name: "Public transportation",
       forums: [
         {
           id: 1,
-          title: "Survive the Subway",
-          description: "Public transportation during budy hours and days can be a very dangerous place. It would be nice to encourage active communication between people to avoid injury.",
+          title: "Subway",
+          description: "Subway trains and stations during budy hours and days can be a very dangerous place. It would be nice to encourage active communication between people to avoid injury.",
           image: "/assets/elevator_danger1.jpg",
           posts: 3,
           topics: 1,
@@ -31,18 +31,44 @@ const forumData = [
             }
           ]
         },
-        // More forums...
+        {
+            id: 2,
+            title: "Bus",
+            description: "Inside the bus and bus stops can turn chaotic during rush hours. Share experiences and voice your thoughts on how to travel safer with bus.",
+            image: "/assets/elevator_danger1.jpg",
+            posts: 3,
+            topics: 1,
+            recentTopics: [
+              {
+                id: 1,
+                title: "... 😡",
+                author: "QuantumEcho",
+                date: "4 weeks ago"
+              },
+              {
+                  id: 2,
+                  title: "... 🤯",
+                  author: "UrbanVoyager",
+                  date: "4 weeks ago"
+              },
+              {
+                  id: 3,
+                  title: "... ",
+                  author: "UrbanVoyager",
+                  date: "4 weeks ago"
+              }
+            ]
+          },
       ]
     },
-
     {
         id: 2,
-        name: "Bicycle Safety",
+        name: "Personal mobility vehicles",
         forums: [
           {
             id: 1,
-            title: "Signal your presence, sinal your way!",
-            description: "So many bike ridrs don't signal then they are coming from pedestrians' behind, or when there are people walking in front of them when they are about to turn. This kind of situations can cause so much avoidable injury, harm and damage. Rider, we need to signal more!",
+            title: "Bicycle",
+            description: "Riders, signal your presence, sinal your way!",
             image: "https://bicyclenetwork.com.au/wp-content/uploads/2018/12/pedestrians-and-bikes-feature-1.png",
             posts: 3,
             topics: 1,
@@ -55,26 +81,18 @@ const forumData = [
               }
             ]
           },
-          // More forums...
-        ]
-      },
-
-      {
-        id: 3,
-        name: "E-scooter Safety",
-        forums: [
           {
-            id: 1,
-            title: "Rider's safety missions",
-            description: "E-scooter riders should be more educated and trained.",
+            id: 2,
+            title: "E-scooters",
+            description: "Riders, signal your presence, sinal your way!",
             image: "https://image.kmib.co.kr/online_image/2019/0518/611220150013323951_1.jpg",
             posts: 3,
             topics: 1,
             recentTopics: [
               {
                 id: 1,
-                title: "recent topic title",
-                author: "EchoDreamer",
+                title: "I can see people are scared when I go around town with my e-scooter. 🛴",
+                author: "NeonPioneer",
                 date: "4 weeks ago"
               }
             ]
@@ -84,37 +102,13 @@ const forumData = [
       },
 
       {
-        id: 4,
-        name: "Motorcycle Safety",
+        id: 3,
+        name: "Cars",
         forums: [
           {
             id: 1,
-            title: "title",
-            description: "Support for those affected by title",
-            posts: 3,
-            topics: 1,
-            recentTopics: [
-              {
-                id: 1,
-                title: "recent topic title",
-                author: "FrostedVista",
-                date: "4 weeks ago"
-              }
-            ]
-          },
-          // More forums...
-        ]
-      },
- 
-
-      {
-        id: 5,
-        name: "Car - Driver Safety",
-        forums: [
-          {
-            id: 1,
-            title: "title",
-            description: "Support for those affected by title",
+            title: "Cars",
+            description: "It's time to call it quits to reckless driving. Make the roads and streets safer place to walk.",
             posts: 3,
             topics: 1,
             recentTopics: [
@@ -126,7 +120,21 @@ const forumData = [
               }
             ]
           },
-          // More forums...
+          {
+            id: 2,
+            title: "Motorcycles",
+            description: "Time to bring chaneges to motorcycle driving culture and safety.",
+            posts: 3,
+            topics: 1,
+            recentTopics: [
+              {
+                id: 1,
+                title: "recent topic title",
+                author: "StellarWanderer",
+                date: "4 weeks ago"
+              }
+            ]
+          },
         ]
       },
     ];

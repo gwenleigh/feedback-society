@@ -1,15 +1,12 @@
 import React, { useState } from 'react';
 import { ChevronUp, ChevronDown, MessageSquare } from 'lucide-react';
-
 import forumData from '../data/forumData';
-
-// import ForumCategory from './components/ForumCategory';
 
 const ForumCategory = ({ category, isExpanded, onToggle }) => {
   return (
     <div className="bg-white rounded-lg shadow-md mb-4">
       <div className="bg-gray-100 p-4 rounded-t-lg">
-        <h2 className="text-xl font-semibold">{category.name}</h2>
+        <h2 className="text-xl font-bold">{category.name}</h2>
         <div className="flex justify-between mt-2">
           <span>Posts</span>
           <span>Topics</span>
@@ -29,10 +26,10 @@ const ForumItem = ({ forum }) => {
     <div className="border-t border-gray-200 p-4">
       <div className="flex items-start">
         <div className="flex-shrink-0 mr-4">
-          <MessageSquare className="text-gray-400" size={24} />
+          {/* <MessageSquare className="text-gray-400" size={24} /> */}
         </div>
         <div className="flex-grow">
-          <h3 className="text-lg font-semibold text-blue-600">{forum.title}</h3>
+          <h3 className="text-lg text-blue-600">{forum.title}</h3>
           <p className="text-sm text-gray-600">{forum.description}</p>
           <img
             src={forum.image}
@@ -53,7 +50,7 @@ const ForumItem = ({ forum }) => {
             </button>
           </div>
         </div>
-        <div className="flex-shrink-0 text-right">
+        <div className="text-right flex-column">         {/* flex-shrink-0 */}
           <div>{forum.posts} posts</div>
           <div>{forum.topics} topics</div>
         </div>
@@ -80,29 +77,41 @@ const ForumItem = ({ forum }) => {
 };
 
 const ForumStructure = ({ categories }) => {
-    const [isExpanded, setIsExpanded] = useState(true);
+    const [showTopics, setShowTopics] = useState(false);
 
-    const handleToggle = (categoryId) => {
-        setIsExpanded(isExpanded === categoryId ? null : categoryId);
+
+    const handleToggle = () => {
+        setShowTopics(!showTopics);
     };
   
   return (
     <div className="max-w-4xl mx-auto p-4">
       <div className="mb-4 flex justify-between items-center">
         <h1 className="text-2xl font-bold">Feedback Society Forum</h1>
+        <p>Voice for safety, make the world a safer place to live</p>
         <div className="space-x-4">
           {/* <button className="text-blue-600 hover:underline">Unread Posts</button> */}
-          <button className="text-blue-600 hover:underline">Forums</button>
           <div>
                 <button 
                     className="text-blue-600 hover:underline"
-                    onClick={() => handleToggle(isExpanded)}
+                    onClick={() => handleToggle(showTopics)}
                 >Topics</button>
-                    {categories.map((category) => (
-                        <ForumCategory key={category.id} category={category} />
-                ))}
+                    {showTopics && (
+                        <div>
+                            {categories.map((category) => (
+                                <div key={category.id} className="m-2">
+                                    <h6 className="font-semibold text-blue-600">{category.name}</h6>
+                                </div>
+                            ))}
+                        </div>
+                    )}
           </div>
         </div>
+
+        {categories.map((category) => (
+                        <ForumCategory key={category.id} category={category} />
+                ))}
+
       </div>
     </div>
   );
