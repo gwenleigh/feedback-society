@@ -35,7 +35,7 @@ const forumData = [
             id: 2,
             title: "Bus",
             description: "Inside the bus and bus stops can turn chaotic during rush hours. Share experiences and voice your thoughts on how to travel safer with bus.",
-            image: "/assets/elevator_danger1.jpg",
+            image: "https://d31nhj1t453igc.cloudfront.net/cloudinary/2022/Apr/08/bcSgGPytiozmUbDPPiCu.jpg",
             posts: 3,
             topics: 1,
             recentTopics: [
