@@ -7,6 +7,7 @@ import Post from './components/Post';
 import ForumStructure from './components/ForumStructure';
 
 import LoginPage from './pages/LoginPage';
+import SingUpPage from './pages/SingUpPage';
 import forumData from './data/forumData';
 import './App.css';
 
@@ -15,6 +16,7 @@ const Layout = () => {
 
   // Determine if we are on the login page
   const isLoginPage = location.pathname === '/login';
+  const isSignUpPage = location.pathname === '/signup';
 
   return (
     <>
@@ -24,8 +26,9 @@ const Layout = () => {
           <Route path="/" element={<Forum />} />
           <Route path="/post" element={<Post />} />
           <Route path="/login" element={<LoginPage />} />
+          <Route path="/signup" element={<SingUpPage />} />
         </Routes>
-        {!isLoginPage && <ForumStructure categories={forumData} />}
+        {!isLoginPage && !isSignUpPage && <ForumStructure categories={forumData} />}
       </div>
       <Footer />
     </>
