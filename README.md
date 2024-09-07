@@ -68,3 +68,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+### Images used
+- Bike vs pedestrian crash myth exposed https://bicyclenetwork.com.au/newsroom/2018/12/06/bike-vs-pedestrian-crash-myth-exposed/
+- “애치고 뺑소니 전동킥보드남 찾아요” 대전 사건 https://www.kmib.co.kr/article/view.asp?arcid=0013323951
