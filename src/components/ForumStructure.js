@@ -5,12 +5,8 @@ import forumData from '../data/forumData';
 const ForumCategory = ({ category, isExpanded, onToggle }) => {
   return (
     <div className="bg-white rounded-lg shadow-md mb-4">
-      <div className="bg-gray-100 p-4 rounded-t-lg">
+      <div className="bg-gray-100 rounded-t-lg padding-forum-title">
         <h2 className="text-xl font-bold">{category.name}</h2>
-        <div className="flex justify-between mt-2">
-          <span>Posts</span>
-          <span>Topics</span>
-        </div>
       </div>
       {category.forums.map((forum) => (
         <ForumItem key={forum.id} forum={forum} />
@@ -23,7 +19,7 @@ const ForumItem = ({ forum }) => {
   const [isExpanded, setIsExpanded] = useState(true);
 
   return (
-    <div className="border-t border-gray-200 p-4">
+    <div className="border-t border-gray-200 padding-forum-sub">
       <div className="flex items-start">
         <div className="flex-shrink-0 mr-4">
           {/* <MessageSquare className="text-gray-400" size={24} /> */}
@@ -31,6 +27,7 @@ const ForumItem = ({ forum }) => {
         <div className="flex-grow">
           <h3 className="text-lg text-blue-600">{forum.title}</h3>
           <p className="text-sm text-gray-600">{forum.description}</p>
+
           <img
             src={forum.image}
             alt="Forum related"

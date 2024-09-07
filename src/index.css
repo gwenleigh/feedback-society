@@ -63,3 +63,13 @@ code {
 .ml-32 {
   margin-left: 32px;
 }
+
+.padding-forum-title {
+  padding-top: 2rem;
+  padding-left: 1.5em;
+}
+
+.padding-forum-sub {
+  padding-top: 1.5rem;
+  padding-left: 1.5em;
+}

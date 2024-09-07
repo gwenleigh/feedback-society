@@ -14,17 +14,19 @@ function LoginPage() {
             <h2 className="text-center mb-4">Login</h2>
             <Form>
               <Form.Group controlId="formUsername" className='mb-1'>
-                <Form.Control type="text" placeholder="Username" />
+                <Form.Control type="text" placeholder="Username" style={{ borderRadius: '0' }} />
               </Form.Group>
               <Form.Group controlId="formPassword">
-                <Form.Control type="password" placeholder="Password" />
+                <Form.Control type="password" placeholder="Password"style={{ borderRadius: '0' }} />
               </Form.Group>
-              <Button variant="dark" type="submit" className="w-100 mt-3">
+              <Button variant="dark" type="submit" className="w-100 mt-3" style={{ borderRadius: '0' }}>
                 Login
               </Button>
             </Form>
             <div className="text-center mt-3">
-              <p>Don’t have an account? <Link to="/signup">Sign up</Link></p>
+              <p>Don’t have an account?<br></br>
+                <Link to="/signup">Sign up</Link>, it's free!
+              </p>
             </div>
           </div>
         </Col>
