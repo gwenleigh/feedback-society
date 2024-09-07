@@ -3,9 +3,9 @@ require('dotenv').config();
 const express = require('express');
 const { Pool } = require('pg');
 const app = express();
-const port = 5002;
+const port = 5000;
 
-// PostgreSQL connection setup
+  // PostgreSQL connection setup
 const pool = new Pool({
     user: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
