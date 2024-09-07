@@ -115,7 +115,7 @@ const forumData = [
               {
                 id: 1,
                 title: "recent topic title",
-                author: "StellarWanderer",
+                author: "StarWanderer",
                 date: "4 weeks ago"
               }
             ]
@@ -130,7 +130,7 @@ const forumData = [
               {
                 id: 1,
                 title: "recent topic title",
-                author: "StellarWanderer",
+                author: "DragonTatoo",
                 date: "4 weeks ago"
               }
             ]

@@ -74,3 +74,36 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Bike vs pedestrian crash myth exposed https://bicyclenetwork.com.au/newsroom/2018/12/06/bike-vs-pedestrian-crash-myth-exposed/
 - “애치고 뺑소니 전동킥보드남 찾아요” 대전 사건 https://www.kmib.co.kr/article/view.asp?arcid=0013323951
 - How to get more people to use public transport and reduce overcrowding https://lens.monash.edu/@design-architecture/2019/02/25/1373466/reducing-public-transport-overcrowding
+
+
+## Development
+
+- set things up for database (psql)
+    - `npm install express pg`
+    - `npm install sequelize pg pg-hstore`
+    - start backend server
+        - `node src/index.js`
+    - test API endpoint 
+        - `http://localhost:5000/api/data`
+
+- Set Up Concurrent Running for Frontend and Backend
+    - at project root: `npm install concurrently --save-dev`
+
+- Database troubleshooting
+    - `ping your-db-instance-name.region.rds.amazonaws.com`
+    - `psql -h your-db-instance-name.region.rds.amazonaws.com -U your-db-username -d your-database`
+    - `nc -zv your-db-instance-name.region.rds.amazonaws.com -U your-db-username 5432`
+
+- RDS while connection error: no pg_hba.conf entry for host https://stackoverflow.com/questions/76899023/rds-while-connection-error-no-pg-hba-conf-entry-for-host
+
+- connect to the database within the RDS instance
+    - `postgres=> \c feedback_society`
+        ```
+        feedback_society=> \dt
+                    List of relations
+        Schema |     Name      | Type  |  Owner   
+        --------+---------------+-------+----------
+        public | categories    | table | postgres
+        public | forums        | table | postgres
+        public | recent_topics | table | postgres
+        ```

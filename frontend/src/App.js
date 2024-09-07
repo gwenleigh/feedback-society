@@ -2,9 +2,9 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Forum from './components/Forum';
 import Post from './components/Post';
 import ForumStructure from './components/ForumStructure';
+import DataFetcher from './components/DataFetcher';
 
 import LoginPage from './pages/LoginPage';
 import SignUpPage from './pages/SignUpPage';
@@ -25,7 +25,6 @@ const Layout = () => {
       <Header />
       <div className="container">
         <Routes>
-          <Route path="/" element={<Forum />} />
           <Route path="/post" element={<Post />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/login" element={<LoginPage />} />
@@ -42,10 +41,10 @@ function App() {
   return (
     <Router>
       <Layout />
+      <DataFetcher />
     </Router>
   );
 }
 
 export default App;
-
 
