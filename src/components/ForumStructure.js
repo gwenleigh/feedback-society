@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { ChevronUp, ChevronDown, MessageSquare } from 'lucide-react';
 import forumData from '../data/forumData';
 
@@ -78,16 +78,32 @@ const ForumItem = ({ forum }) => {
 
 const ForumStructure = ({ categories }) => {
     const [showTopics, setShowTopics] = useState(false);
+    const [headerHeight, setHeaderHeight] = useState(0);
+    const contentRef = useRef(null);
 
+    useEffect(() => {
+        const updatePadding = () => {
+            const header = document.querySelector('.navbar');
+            if (header) {
+                setHeaderHeight(header.offsetHeight);
+            }
+        };
+
+        updatePadding(); // initial padding
+        window.addEventListener('resize', updatePadding); //update padding on resize
+        return () => {
+            window.removeEventListener('resize', updatePadding);
+        };
+    }, []);
 
     const handleToggle = () => {
         setShowTopics(!showTopics);
     };
   
   return (
-    <div className="max-w-4xl mx-auto p-4">
+    <div className="max-w-4xl mx-auto margin-side" style={{ paddingTop: `${headerHeight * 1.5}px` }} ref={contentRef}>
       <div className="mb-4 flex justify-between items-center">
-        <h1 className="text-2xl font-bold">Feedback Society Forum</h1>
+        <h1 className="text-2xl font-bold">Community Safety Forum</h1>
         <p>Voice for safety, make the world a safer place to live</p>
         <div className="space-x-4">
           {/* <button className="text-blue-600 hover:underline">Unread Posts</button> */}

@@ -25,6 +25,37 @@ code {
   flex-direction: column; 
 }
 
+.flex-row {
+  display: flex;
+  flex-direction: row; 
+}
+
 .font-bold {
   font-weight: bold;
+}
+
+.nav-bar-padding {
+  padding-left: 2em;
+  /* padding-top: 1em; */
+}
+
+.navbar .fixed-top > p {
+  margin-block-start: 0 !important;
+  margin-block-end: 0 !important;
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.margin-side {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.mt-navbar {
+  margin-top: 0.20em;
+}
+
+.border-black {
+  border-color: black;
+  border: 2px;
 }
