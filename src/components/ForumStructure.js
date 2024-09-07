@@ -101,7 +101,7 @@ const ForumStructure = ({ categories }) => {
     };
   
   return (
-    <div className="max-w-4xl mx-auto margin-side" style={{ paddingTop: `${headerHeight * 1.5}px` }} ref={contentRef}>
+    <div className="max-w-4xl mx-auto margin-side" style={{ paddingTop: `${headerHeight * 0.75}px` }} ref={contentRef}>
       <div className="mb-4 flex justify-between items-center">
         <h1 className="text-2xl font-bold">Community Safety Forum</h1>
         <p>Voice for safety, make the world a safer place to live</p>

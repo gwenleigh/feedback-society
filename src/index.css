@@ -59,3 +59,7 @@ code {
   border-color: black;
   border: 2px;
 }
+
+.ml-32 {
+  margin-left: 32px;
+}
