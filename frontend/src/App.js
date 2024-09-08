@@ -25,7 +25,7 @@ const Layout = () => {
       <Header />
       <div className="container">
         <Routes>
-          <Route path="/post" element={<Post />} />
+          <Route path="/post/:postId" element={<Post />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/signup" element={<SignUpPage />} />

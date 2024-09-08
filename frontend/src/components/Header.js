@@ -6,10 +6,10 @@ import './Header.css';
 
 function Header() {
   return (
-    <Navbar bg="light" expand="lg" className='fixed-top border-black navbar-custom'>
+    <Navbar expand="lg" className='fixed-top border-black navbar-custom theme-border header-color'>
       <div className='flex-row nav-bar-padding'>
         <Navbar.Brand className='font-bold' as={Link} to="/" >Feedback Society</Navbar.Brand>
-        <Navbar.Brand className='fs-6 mt-navbar '>Speak, give feedback for a safer world</Navbar.Brand>
+        <Navbar.Brand className='fs-6 mt-navbar '>Say it, make the world a friendlier place.</Navbar.Brand>
       </div>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
