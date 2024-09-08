@@ -1,82 +1,56 @@
-# Getting Started with Create React App
+# Feedback Society 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img src="frontend/public/assets/feedback-society-portal.png" width=1000 >
 
-## Available Scripts
+Hi. This is a project repo which I developed as part of a hackerthon [Seoul Tech Impact 2024](https://www.seoultechimpact.com/). As a one-person team, I built a skeleton website in React to conceptualise the social cause I want to promote. It was a 24-hour thon so the code and the project structure is a bit messy, but it was a fun endeavour!
 
-In the project directory, you can run:
+## Details
 
-### `npm start`
+[Hackerthon]
+- My submission on [Devpost](https://devpost.com/software/feedback-society?ref_content=user-portfolio&ref_feature=in_progress
+)
+- [Seoul Tech Impact 2024](https://www.seoultechimpact.com/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+[Project]
+- Project App [Feedback Society](https://feedback-society.vercel.app/)
+- 24-hour hackerthon 
+- One-person team
+- Skeleton website in React + Backend + Postgres RDS on AWS
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Problem Statement
+ Strangers in public spaces rarely communicate in Korea. This can (and seems to often do) cause problems like physical harm (collision, injury) or add to mental harm (stress, anxiety, public phobia). Things don't have to do this way. We can improve our culture of interacting in public by changing our habits and mindset.
 
-### `npm test`
+ My project is a simple prototype of this concept. It’s just a react skeleton, but Ideally, it should serve as a community forum like Reddit that provides safe space where people can freely talk. Freely talk, but specifically about how we can make  public spaces a safer place by communicating more clearly between strangers. And communication doesn’t have to be lengthy or complicated. It starts from simple “excuse me” or “pardon me” or “thank you”. Hopefully the visualisation of such conversations in this conceptual community forum encourages strangers in public spaces to communicate more clearly in reality.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ [Project Beneficiaries] 
+ - General public
+ - People interested in improving public safety in public spaces
 
-### `npm run build`
+## Solutions overview
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<img src="frontend/public/assets/feature-signin.png" width=500 >   
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This is a membership based community forum. Users can sign in or sign up.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<img src="frontend/public/assets/feature-about.png" width=500 >
 
-### `npm run eject`
+Feedback Society is a not-for-profit organisation working to exert soft and positive influence over the general public to help shape more respectful, but direct and clear communicating culture to improve public safety. 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<img src="frontend/public/assets/forum-category1.png" width=500 > <img src="frontend/public/assets/forum-category2.png" width=500 >   
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The forum offers various public safety categories. Users can freely create posts on each forum categoroy and exchange their ideas. 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+[Inspirations]  
+- Social cause - https://grieflifeline.org/
+- App architecture - https://www.reddit.com/
+- Frontend design - https://www.fullstackfoundations.com/
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## (Personal) achievement
+- I applied for Seoul Impact 2023 and I was there, but I withdrew because I thought I wasn't good enough to create and build anything. 
+- This year in 2024, at least I built a skeleton and people can "see" my cause. I'm very proud of my personal progress.
 
 
-### Images used
-- Bike vs pedestrian crash myth exposed https://bicyclenetwork.com.au/newsroom/2018/12/06/bike-vs-pedestrian-crash-myth-exposed/
-- “애치고 뺑소니 전동킥보드남 찾아요” 대전 사건 https://www.kmib.co.kr/article/view.asp?arcid=0013323951
-- How to get more people to use public transport and reduce overcrowding https://lens.monash.edu/@design-architecture/2019/02/25/1373466/reducing-public-transport-overcrowding
-
-
-## Development
+## Troubleshooting notes
 
 - set things up for database (psql)
     - `npm install express pg`

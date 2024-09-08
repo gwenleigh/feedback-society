@@ -95,17 +95,6 @@ code {
   font-weight: bold;
 }
 
-/* .forum-card {
-  background-color: white;
-  transition: background-color 0.3s ease-in-out;
-} */
-
-/* .forum-card:hover {
-  background-color: #f0f4f8; /* Change background on hover
-} 
-*/
-
-/* Target the element with class forum-title inside forum-card */
 .forum-card:hover .forum-title {
   font-weight: bold;
   transition: font-weight 0.3s ease-in-out;

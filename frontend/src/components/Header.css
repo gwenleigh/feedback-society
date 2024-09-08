@@ -1,6 +1,6 @@
 .custom-header {
-    background-color: #f8f9fa; /* Example background color */
-    padding: 1rem; /* Adjust padding as needed */
+    background-color: #f8f9fa; 
+    padding: 1rem; 
   }
   
   .custom-brand-container {
@@ -11,25 +11,23 @@
   }
   
   .custom-brand {
-    font-size: 2rem; /* Adjust font size as needed */
+    font-size: 2rem; 
     font-weight: bold;
   }
   
   .custom-tagline {
-    font-size: 1rem; /* Adjust font size as needed */
-    margin-top: 0.5rem; /* Adjust margin as needed */
+    font-size: 1rem; 
+    margin-top: 0.5rem; 
   }
-
-
-  /* Ensure that the Navbar has the correct display and alignment */
+  
 .space-between {
     display: flex;
-    justify-content: space-between; /* Space between items in the Navbar */
-    align-items: center; /* Center items vertically */
+    justify-content: space-between; 
+    align-items: center; 
   }
   
   .header-menu-margin {
-    margin-left: 35%; /* Push the Nav items to the right */
+    margin-left: 35%; 
   }
   
   .header-color {

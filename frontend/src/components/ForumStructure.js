@@ -25,7 +25,6 @@ const ForumItem = ({ forum }) => {
     <div className="forum-card border-t border-gray-200 padding-forum-sub forum-item-color">
       <div className="flex items-start">
         <div className="flex-shrink-0 mr-4">
-          {/* <MessageSquare className="text-gray-400" size={24} /> */}
         </div>
         <div className="flex-grow">
           <h3 className="forum-title text-lg text-blue-600">{forum.title}</h3>
@@ -45,7 +44,7 @@ const ForumItem = ({ forum }) => {
             </button>
           </div>
         </div>
-        <div className="text-right flex-column">         {/* flex-shrink-0 */}
+        <div className="text-right flex-column">
           <div>{forum.posts} posts</div>
           <div>{forum.topics} topics</div>
         </div>
@@ -121,7 +120,6 @@ const ForumStructure = ({ categories }) => {
         <h1 className="text-2xl font-bold">Community Safety Forum</h1>
         <p>Voice for safety, make the world a safer place to live</p>
         <div className="space-x-4">
-          {/* <button className="text-blue-600 hover:underline">Unread Posts</button> */}
           <div>
                 <button 
                     className="text-blue-600 hover:underline bg-theme-color"
