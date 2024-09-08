@@ -26,7 +26,7 @@ function AboutPage() {
   }, []);
 
   return (
-    <div className="max-w-4xl mx-auto margin-side" style={{ paddingTop: `${headerHeight * 1.5}px` }} ref={contentRef}>
+    <div className="max-w-4xl mx-auto about-border" style={{ paddingTop: `${headerHeight * 1.5}px` }} ref={contentRef}>
       <div className="mb-4 flex justify-between items-center">
         <h1 className="text-2xl font-bold">About Us</h1>
         <p>Feedback Society</p>

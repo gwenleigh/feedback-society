@@ -32,3 +32,6 @@
     margin-left: 35%; /* Push the Nav items to the right */
   }
   
+  .header-color {
+    background-color: rgb(117, 188, 190);
+  }

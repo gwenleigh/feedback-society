@@ -12,19 +12,19 @@ const forumData = [
           topics: 1,
           recentTopics: [
             {
-              id: 1,
+              id: 101,
               title: "Someone stepped on my foot and don't say sorry 😡",
               author: "QuantumEcho",
               date: "4 weeks ago"
             },
             {
-                id: 2,
-                title: "Someone scratched me I bleeded in subway train 🤯",
+                id: 102,
+                title: "A girl scratched me I bled in subway train 🤯",
                 author: "UrbanVoyager",
                 date: "4 weeks ago"
             },
             {
-                id: 3,
+                id: 103,
                 title: "I'm tired of people pushing and not being sorry",
                 author: "UrbanVoyager",
                 date: "4 weeks ago"
@@ -34,26 +34,26 @@ const forumData = [
         {
             id: 2,
             title: "Bus",
-            description: "Inside the bus and bus stops can turn chaotic during rush hours. Share experiences and voice your thoughts on how to travel safer with bus.",
+            description: "Inside the bus and arond bus stops things can turn chaotic during rush hours. Share experiences and voice your thoughts on how to travel safer with bus.",
             image: "https://d31nhj1t453igc.cloudfront.net/cloudinary/2022/Apr/08/bcSgGPytiozmUbDPPiCu.jpg",
             posts: 3,
             topics: 1,
             recentTopics: [
               {
-                id: 1,
-                title: "... 😡",
+                id: 201,
+                title: "Im tired of people not excusing themselves 😡",
                 author: "QuantumEcho",
                 date: "4 weeks ago"
               },
               {
-                  id: 2,
-                  title: "... 🤯",
+                  id: 202,
+                  title: "I hope people stope pushing each other 🤯",
                   author: "UrbanVoyager",
                   date: "4 weeks ago"
               },
               {
-                  id: 3,
-                  title: "... ",
+                  id: 203,
+                  title: "Bus rides are so depressing!",
                   author: "UrbanVoyager",
                   date: "4 weeks ago"
               }
@@ -74,7 +74,7 @@ const forumData = [
             topics: 1,
             recentTopics: [
               {
-                id: 1,
+                id: 301,
                 title: "I got almost run over by a fat bike 🤯",
                 author: "NeonPioneer",
                 date: "4 weeks ago"
@@ -90,7 +90,7 @@ const forumData = [
             topics: 1,
             recentTopics: [
               {
-                id: 1,
+                id: 401,
                 title: "I can see people are scared when I go around town with my e-scooter. 🛴",
                 author: "NeonPioneer",
                 date: "4 weeks ago"
@@ -113,9 +113,9 @@ const forumData = [
             topics: 1,
             recentTopics: [
               {
-                id: 1,
+                id: 501,
                 title: "recent topic title",
-                author: "StellarWanderer",
+                author: "StarWanderer",
                 date: "4 weeks ago"
               }
             ]
@@ -128,9 +128,9 @@ const forumData = [
             topics: 1,
             recentTopics: [
               {
-                id: 1,
+                id: 601,
                 title: "recent topic title",
-                author: "StellarWanderer",
+                author: "DragonTatoo",
                 date: "4 weeks ago"
               }
             ]
